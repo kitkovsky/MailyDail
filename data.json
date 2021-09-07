@@ -1,0 +1,60 @@
+{
+  "table": [
+    {
+      "dailyInfected": 366,
+      "dailyTested": 40800,
+      "dailyDeceased": 13,
+      "lastUpdatedAtSource": "2021-09-01T09:30:00.000Z",
+      "pomeranian": { "testedCount": -1, "testedPositive": -1 },
+      "lowerSilesia": { "testedCount": -1, "testedPositive": -1 }
+    },
+    {
+      "dailyInfected": 390,
+      "dailyTested": 39200,
+      "dailyDeceased": 9,
+      "lastUpdatedAtSource": "2021-09-02T09:30:00.000Z",
+      "pomeranian": { "testedCount": -1, "testedPositive": -1 },
+      "lowerSilesia": { "testedCount": -1, "testedPositive": -1 }
+    },
+    {
+      "dailyInfected": 349,
+      "dailyTested": 36500,
+      "dailyDeceased": 5,
+      "lastUpdatedAtSource": "2021-09-03T09:30:00.000Z",
+      "pomeranian": { "testedCount": -1, "testedPositive": -1 },
+      "lowerSilesia": { "testedCount": -1, "testedPositive": -1 }
+    },
+    {
+      "dailyInfected": 389,
+      "dailyTested": 41100,
+      "dailyDeceased": 7,
+      "lastUpdatedAtSource": "2021-09-04T09:30:00.000Z",
+      "pomeranian": { "testedCount": -1, "testedPositive": -1 },
+      "lowerSilesia": { "testedCount": -1, "testedPositive": -1 }
+    },
+    {
+      "dailyInfected": 324,
+      "dailyTested": 30100,
+      "dailyDeceased": 0,
+      "lastUpdatedAtSource": "2021-09-05T09:30:00.000Z",
+      "pomeranian": { "testedCount": -1, "testedPositive": -1 },
+      "lowerSilesia": { "testedCount": -1, "testedPositive": -1 }
+    },
+    {
+      "dailyInfected": 183,
+      "dailyTested": 21300,
+      "dailyDeceased": 0,
+      "lastUpdatedAtSource": "2021-09-06T09:30:00.000Z",
+      "pomeranian": { "testedCount": -1, "testedPositive": -1 },
+      "lowerSilesia": { "testedCount": -1, "testedPositive": -1 }
+    },
+    {
+      "dailyInfected": 406,
+      "dailyTested": 44329,
+      "dailyDeceased": 13,
+      "lastUpdatedAtSource": "2021-09-07T09:30:00.000Z",
+      "pomeranian": { "testedCount": 1208, "testedPositive": 30 },
+      "lowerSilesia": { "testedCount": 1996, "testedPositive": 28 }
+    }
+  ]
+}
