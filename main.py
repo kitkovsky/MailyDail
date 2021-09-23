@@ -27,7 +27,7 @@ driver.maximize_window()
 driver.get("https://www.gov.pl/web/koronawirus/wykaz-zarazen-koronawirusem-sars-cov-2")
 
 print("start timer")
-time.sleep(30)
+time.sleep(60)
 print("end timer")
 
 driver.execute_script("window.scrollTo(0, 400)") 
