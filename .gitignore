@@ -3,3 +3,4 @@ venv/
 .DS_Store
 graph.png
 credentials.py
+__pycache__
