@@ -6,15 +6,16 @@ import numpy as np
 import imghdr
 from selenium import webdriver
 from email.message import EmailMessage
+from credentials import EMAIL_ADDRESS, EMAIL_PASSWORD, MY_EMAIL_ADDRESS
 
 
 def makeProperDate(date):
     return f"{date[8:10]}.{date[5:7]}.{date[2:4]}"
 
 
-EMAIL_ADDRESS = os.getenv("EMAIL_USER", "None")
-EMAIL_PASSWORD = os.getenv("EMAIL_PASS", "None")
-MY_EMAIL_ADDRESS = os.getenv("MY_EMAIL", "None")
+# EMAIL_ADDRESS = os.getenv("EMAIL_USER", "None")
+# EMAIL_PASSWORD = os.getenv("EMAIL_PASS", "None")
+# MY_EMAIL_ADDRESS = os.getenv("MY_EMAIL", "None")
 
 path = "/Users/oliwerkitkowski/Downloads/chromedriver"
 driver = webdriver.Chrome(path)
@@ -61,6 +62,6 @@ msg.add_attachment(fileData,
                    subtype=fileType,
                    filename="graph")
 
-# with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
-    # smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
-    # smtp.send_message(msg)
+with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
+    smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
+    smtp.send_message(msg)
