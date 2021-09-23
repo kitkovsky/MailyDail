@@ -4,3 +4,4 @@ venv/
 graph.png
 credentials.py
 __pycache__
+*.png

@@ -4,6 +4,7 @@ import json
 import matplotlib.pyplot as plt
 import numpy as np
 import imghdr
+import time
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from email.message import EmailMessage
@@ -20,10 +21,23 @@ def makeProperDate(date):
 
 chromeOptions = Options()
 chromeOptions.add_argument("--headless")
-# path = "/Users/oliwerkitkowski/Downloads/chromedriver"
-driver = webdriver.Chrome(options=chromeOptions)
+# driver = webdriver.Chrome(DRIVER_PATH, options=chromeOptions)
+driver = webdriver.Chrome(DRIVER_PATH)
+driver.maximize_window()
 driver.get("https://www.gov.pl/web/koronawirus/wykaz-zarazen-koronawirusem-sars-cov-2")
-print(driver.page_source.encode("utf-8"))
+
+print("start timer")
+time.sleep(30)
+print("end timer")
+
+driver.execute_script("window.scrollTo(0, 400)") 
+s = driver.get_window_size()
+w = driver.execute_script('return document.body.parentNode.scrollWidth')
+h = driver.execute_script('return document.body.parentNode.scrollHeight')
+driver.set_window_size(w, h)
+driver.find_element_by_tag_name('body').screenshot("screenshot.png")
+driver.set_window_size(s['width'], s['height'])
+# driver.save_screenshot("screen.png")
 driver.quit()
 
 with open("./data.json") as file:
