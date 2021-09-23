@@ -4,6 +4,7 @@ import json
 import matplotlib.pyplot as plt
 import numpy as np
 import imghdr
+from selenium import webdriver
 from email.message import EmailMessage
 
 
@@ -14,6 +15,10 @@ def makeProperDate(date):
 EMAIL_ADDRESS = os.getenv("EMAIL_USER", "None")
 EMAIL_PASSWORD = os.getenv("EMAIL_PASS", "None")
 MY_EMAIL_ADDRESS = os.getenv("MY_EMAIL", "None")
+
+path = "/Users/oliwerkitkowski/Downloads/chromedriver"
+driver = webdriver.Chrome(path)
+driver.get("https://www.gov.pl/web/koronawirus/wykaz-zarazen-koronawirusem-sars-cov-2")
 
 with open("./data.json") as file:
     data = json.load(file)
@@ -56,6 +61,6 @@ msg.add_attachment(fileData,
                    subtype=fileType,
                    filename="graph")
 
-with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
-    smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
-    smtp.send_message(msg)
+# with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
+    # smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
+    # smtp.send_message(msg)
