@@ -1,188 +1,148 @@
 {
-  "table": [
-    {
-      "dailyInfected": 366,
-      "dailyTested": 40800,
-      "dailyDeceased": 13,
-      "lastUpdatedAtSource": "2021-09-01T09:30:00.000Z",
-      "pomeranian": { "testedCount": -1, "testedPositive": -1 },
-      "lowerSilesia": { "testedCount": -1, "testedPositive": -1 }
-    },
-    {
-      "dailyInfected": 390,
-      "dailyTested": 39200,
-      "dailyDeceased": 9,
-      "lastUpdatedAtSource": "2021-09-02T09:30:00.000Z",
-      "pomeranian": { "testedCount": -1, "testedPositive": -1 },
-      "lowerSilesia": { "testedCount": -1, "testedPositive": -1 }
-    },
-    {
-      "dailyInfected": 349,
-      "dailyTested": 36500,
-      "dailyDeceased": 5,
-      "lastUpdatedAtSource": "2021-09-03T09:30:00.000Z",
-      "pomeranian": { "testedCount": -1, "testedPositive": -1 },
-      "lowerSilesia": { "testedCount": -1, "testedPositive": -1 }
-    },
-    {
-      "dailyInfected": 389,
-      "dailyTested": 41100,
-      "dailyDeceased": 7,
-      "lastUpdatedAtSource": "2021-09-04T09:30:00.000Z",
-      "pomeranian": { "testedCount": -1, "testedPositive": -1 },
-      "lowerSilesia": { "testedCount": -1, "testedPositive": -1 }
-    },
-    {
-      "dailyInfected": 324,
-      "dailyTested": 30100,
-      "dailyDeceased": 0,
-      "lastUpdatedAtSource": "2021-09-05T09:30:00.000Z",
-      "pomeranian": { "testedCount": -1, "testedPositive": -1 },
-      "lowerSilesia": { "testedCount": -1, "testedPositive": -1 }
-    },
-    {
-      "dailyInfected": 183,
-      "dailyTested": 21300,
-      "dailyDeceased": 0,
-      "lastUpdatedAtSource": "2021-09-06T09:30:00.000Z",
-      "pomeranian": { "testedCount": -1, "testedPositive": -1 },
-      "lowerSilesia": { "testedCount": -1, "testedPositive": -1 }
-    },
-    {
-      "dailyInfected": 406,
-      "dailyTested": 44329,
-      "dailyDeceased": 13,
-      "lastUpdatedAtSource": "2021-09-07T09:30:00.000Z",
-      "pomeranian": { "testedCount": 1208, "testedPositive": 30 },
-      "lowerSilesia": { "testedCount": 1996, "testedPositive": 28 }
-    },
-    {
-      "dailyInfected": 533,
-      "dailyTested": 39903,
-      "dailyDeceased": 11,
-      "lastUpdatedAtSource": "2021-09-08T10:30:00.000Z",
-      "pomeranian": { "testedCount": 2602, "testedPositive": 29 },
-      "lowerSilesia": { "testedCount": 2258, "testedPositive": 28 }
-    },
-    {
-      "dailyInfected": 510,
-      "dailyTested": 37704,
-      "dailyDeceased": 6,
-      "lastUpdatedAtSource": "2021-09-09T10:30:00.000Z",
-      "pomeranian": { "testedCount": 1620, "testedPositive": 27 },
-      "lowerSilesia": { "testedCount": 4257, "testedPositive": 32 }
-    },
-    {
-      "dailyInfected": 528,
-      "dailyTested": 39011,
-      "dailyDeceased": 8,
-      "lastUpdatedAtSource": "2021-09-10T10:30:00.000Z",
-      "pomeranian": { "testedCount": 1343, "testedPositive": 24 },
-      "lowerSilesia": { "testedCount": 2314, "testedPositive": 26 }
-    },
-    {
-      "dailyInfected": 530,
-      "dailyTested": 42428,
-      "dailyDeceased": 8,
-      "lastUpdatedAtSource": "2021-09-11T10:30:00.000Z",
-      "pomeranian": { "testedCount": 2495, "testedPositive": 36 },
-      "lowerSilesia": { "testedCount": 1082, "testedPositive": 27 }
-    },
-    {
-      "dailyInfected": 476,
-      "dailyTested": 30754,
-      "dailyDeceased": 0,
-      "lastUpdatedAtSource": "2021-09-12T10:30:00.000Z",
-      "pomeranian": { "testedCount": 814, "testedPositive": 24 },
-      "lowerSilesia": { "testedCount": 1126, "testedPositive": 23 }
-    },
-    {
-      "dailyInfected": 269,
-      "dailyTested": 22440,
-      "dailyDeceased": 0,
-      "lastUpdatedAtSource": "2021-09-13T10:30:00.000Z",
-      "pomeranian": { "testedCount": -1, "testedPositive": -1 },
-      "lowerSilesia": { "testedCount": -1, "testedPositive": -1 }
-    },
-    {
-      "dailyInfected": 537,
-      "dailyTested": 45514,
-      "dailyDeceased": 8,
-      "lastUpdatedAtSource": "2021-09-14T10:30:00.000Z",
-      "pomeranian": { "testedCount": -1, "testedPositive": -1 },
-      "lowerSilesia": { "testedCount": -1, "testedPositive": -1 }
-    },
-    {
-      "dailyInfected": 767,
-      "dailyTested": 42883,
-      "dailyDeceased": 8,
-      "lastUpdatedAtSource": "2021-09-15T10:30:00.000Z",
-      "pomeranian": { "testedCount": -1, "testedPositive": -1 },
-      "lowerSilesia": { "testedCount": -1, "testedPositive": -1 }
-    },
-    {
-      "dailyInfected": 722,
-      "dailyTested": 40873,
-      "dailyDeceased": 10,
-      "lastUpdatedAtSource": "2021-09-16T10:30:00.000Z",
-      "pomeranian": { "testedCount": -1, "testedPositive": -1 },
-      "lowerSilesia": { "testedCount": -1, "testedPositive": -1 }
-    },
-    {
-      "dailyInfected": 652,
-      "dailyTested": 35959,
-      "dailyDeceased": 8,
-      "lastUpdatedAtSource": "2021-09-17T10:30:00.000Z",
-      "pomeranian": { "testedCount": -1, "testedPositive": -1 },
-      "lowerSilesia": { "testedCount": -1, "testedPositive": -1 }
-    },
-    {
-      "dailyInfected": 797,
-      "dailyTested": 42954,
-      "dailyDeceased": 14,
-      "lastUpdatedAtSource": "2021-09-18T10:30:00.000Z",
-      "pomeranian": { "testedCount": -1, "testedPositive": -1 },
-      "lowerSilesia": { "testedCount": -1, "testedPositive": -1 }
-    },
-    {
-      "dailyInfected": 540,
-      "dailyTested": 30978,
-      "dailyDeceased": 1,
-      "lastUpdatedAtSource": "2021-09-19T10:30:00.000Z",
-      "pomeranian": { "testedCount": -1, "testedPositive": -1 },
-      "lowerSilesia": { "testedCount": -1, "testedPositive": -1 }
-    },
-    {
-      "dailyInfected": 363,
-      "dailyTested": 22331,
-      "dailyDeceased": 0,
-      "lastUpdatedAtSource": "2021-09-20T10:30:00.000Z",
-      "pomeranian": { "testedCount": -1, "testedPositive": -1 },
-      "lowerSilesia": { "testedCount": -1, "testedPositive": -1 }
-    },
-    {
-      "dailyInfected": 711,
-      "dailyTested": 45337,
-      "dailyDeceased": 15,
-      "lastUpdatedAtSource": "2021-09-21T10:30:00.000Z",
-      "pomeranian": { "testedCount": -1, "testedPositive": -1 },
-      "lowerSilesia": { "testedCount": -1, "testedPositive": -1 }
-    },
-    {
-      "dailyInfected": 882,
-      "dailyTested": 42300,
-      "dailyDeceased": 20,
-      "lastUpdatedAtSource": "2021-09-22T10:30:00.000Z",
-      "pomeranian": { "testedCount": 2312, "testedPositive": 40 },
-      "lowerSilesia": { "testedCount": 2665, "testedPositive": 49 }
-    },
-    {
-      "dailyInfected": 974,
-      "dailyTested": 41707,
-      "dailyDeceased": 14,
-      "lastUpdatedAtSource": "2021-09-23T10:30:00.000Z",
-      "pomeranian": { "testedCount": 2381, "testedPositive": 39 },
-      "lowerSilesia": { "testedCount": 2783, "testedPositive": 63 }
-    }
-  ]
+    "table": [
+        {
+            "dailyInfected": 366,
+            "dailyTested": 40800,
+            "dailyDeceased": 13,
+            "lastUpdatedAtSource": "01-09-21"
+        },
+        {
+            "dailyInfected": 390,
+            "dailyTested": 39200,
+            "dailyDeceased": 9,
+            "lastUpdatedAtSource": "02-09-21"
+        },
+        {
+            "dailyInfected": 349,
+            "dailyTested": 36500,
+            "dailyDeceased": 5,
+            "lastUpdatedAtSource": "03-09-21"
+        },
+        {
+            "dailyInfected": 389,
+            "dailyTested": 41100,
+            "dailyDeceased": 7,
+            "lastUpdatedAtSource": "04-09-21"
+        },
+        {
+            "dailyInfected": 324,
+            "dailyTested": 30100,
+            "dailyDeceased": 0,
+            "lastUpdatedAtSource": "05-09-21"
+        },
+        {
+            "dailyInfected": 183,
+            "dailyTested": 21300,
+            "dailyDeceased": 0,
+            "lastUpdatedAtSource": "06-09-21"
+        },
+        {
+            "dailyInfected": 406,
+            "dailyTested": 44329,
+            "dailyDeceased": 13,
+            "lastUpdatedAtSource": "07-09-21"
+        },
+        {
+            "dailyInfected": 533,
+            "dailyTested": 39903,
+            "dailyDeceased": 11,
+            "lastUpdatedAtSource": "08-09-21"
+        },
+        {
+            "dailyInfected": 510,
+            "dailyTested": 37704,
+            "dailyDeceased": 6,
+            "lastUpdatedAtSource": "09-09-21"
+        },
+        {
+            "dailyInfected": 528,
+            "dailyTested": 39011,
+            "dailyDeceased": 8,
+            "lastUpdatedAtSource": "10-09-21"
+        },
+        {
+            "dailyInfected": 530,
+            "dailyTested": 42428,
+            "dailyDeceased": 8,
+            "lastUpdatedAtSource": "11-09-21"
+        },
+        {
+            "dailyInfected": 476,
+            "dailyTested": 30754,
+            "dailyDeceased": 0,
+            "lastUpdatedAtSource": "12-09-21"
+        },
+        {
+            "dailyInfected": 269,
+            "dailyTested": 22440,
+            "dailyDeceased": 0,
+            "lastUpdatedAtSource": "13-09-21"
+        },
+        {
+            "dailyInfected": 537,
+            "dailyTested": 45514,
+            "dailyDeceased": 8,
+            "lastUpdatedAtSource": "14-09-21"
+        },
+        {
+            "dailyInfected": 767,
+            "dailyTested": 42883,
+            "dailyDeceased": 8,
+            "lastUpdatedAtSource": "15-09-21"
+        },
+        {
+            "dailyInfected": 722,
+            "dailyTested": 40873,
+            "dailyDeceased": 10,
+            "lastUpdatedAtSource": "16-09-21"
+        },
+        {
+            "dailyInfected": 652,
+            "dailyTested": 35959,
+            "dailyDeceased": 8,
+            "lastUpdatedAtSource": "17-09-21"
+        },
+        {
+            "dailyInfected": 797,
+            "dailyTested": 42954,
+            "dailyDeceased": 14,
+            "lastUpdatedAtSource": "18-09-21"
+        },
+        {
+            "dailyInfected": 540,
+            "dailyTested": 30978,
+            "dailyDeceased": 1,
+            "lastUpdatedAtSource": "19-09-21"
+        },
+        {
+            "dailyInfected": 363,
+            "dailyTested": 22331,
+            "dailyDeceased": 0,
+            "lastUpdatedAtSource": "20-09-21"
+        },
+        {
+            "dailyInfected": 711,
+            "dailyTested": 45337,
+            "dailyDeceased": 15,
+            "lastUpdatedAtSource": "21-09-21"
+        },
+        {
+            "dailyInfected": 882,
+            "dailyTested": 42300,
+            "dailyDeceased": 20,
+            "lastUpdatedAtSource": "22-09-21"
+        },
+        {
+            "dailyInfected": 974,
+            "dailyTested": 41707,
+            "dailyDeceased": 14,
+            "lastUpdatedAtSource": "23-09-21"
+        },
+        {
+            "dailyInfected": 813,
+            "dailyTested": 39962,
+            "dailyDeceased": 14,
+            "lastUpdatedAtSource": "24-09-21"
+        }
+    ]
 }
