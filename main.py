@@ -7,11 +7,12 @@ import time
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from email.message import EmailMessage
-from credentials import EMAIL_ADDRESS, EMAIL_PASSWORD, MY_EMAIL_ADDRESS, DRIVER_PATH
+#from credentials import EMAIL_ADDRESS, EMAIL_PASSWORD, MY_EMAIL_ADDRESS 
 import easyocr
 from PIL import Image
 from datetime import date
 import json
+from datetime import datetime
 
 
 def makeProperDate(date):
@@ -35,93 +36,100 @@ def appendJSON(newData, filename="data.json"):
         file.seek(0)
         json.dump(fileData, file, indent = 4)
 
+def mainBoi():
+    driver = webdriver.Chrome("/home/kitkovsky/Desktop/maily-dail/chromedriver")
+    driver.get("https://www.gov.pl/web/koronawirus/wykaz-zarazen-koronawirusem-sars-cov-2")
+    driver.maximize_window()
 
-# EMAIL_ADDRESS = os.getenv("EMAIL_USER", "None")
-# EMAIL_PASSWORD = os.getenv("EMAIL_PASS", "None")
-# MY_EMAIL_ADDRESS = os.getenv("MY_EMAIL", "None")
+    print("start timer")
+    time.sleep(60)
+    print("end timer")
 
-chromeOptions = Options()
-chromeOptions.add_argument("--headless")
-# driver = webdriver.Chrome(DRIVER_PATH, options=chromeOptions)
-driver = webdriver.Chrome(DRIVER_PATH)
-driver.get("https://www.gov.pl/web/koronawirus/wykaz-zarazen-koronawirusem-sars-cov-2")
-driver.maximize_window()
+    driver.execute_script("window.scrollTo(0, 800)")
+    driver.save_screenshot("screenshot.png")
+    driver.quit()
 
-print("start timer")
-time.sleep(60)
-print("end timer")
+    im = Image.open("/home/kitkovsky/Desktop/maily-dail/screenshot.png")
+    casesCrop = im.crop((435, 200, 590, 252))
+    casesCrop.save("/home/kitkovsky/Desktop/maily-dail/casesCrop.png")
+    deathsCrop = im.crop((970, 200, 1150, 252))
+    deathsCrop.save("/home/kitkovsky/Desktop/maily-dail/deathsCrop.png")
+    testsCrop = im.crop((682, 430, 872, 482))
+    testsCrop.save("/home/kitkovsky/Desktop/maily-dail/testsCrop.png")
 
-driver.execute_script("window.scrollTo(0, 800)")
-driver.save_screenshot("screenshot.png")
-driver.quit()
+    reader = easyocr.Reader(["en"])
+    casesResult = strToInt(reader.readtext("/home/kitkovsky/Desktop/maily-dail/casesCrop.png", detail = 0)[0])
+    deathsResult = strToInt(reader.readtext("/home/kitkovsky/Desktop/maily-dail/deathsCrop.png", detail = 0)[0])
+    testsResult = strToInt(reader.readtext("/home/kitkovsky/Desktop/maily-dail/testsCrop.png", detail = 0)[0])
 
-im = Image.open("screenshot.png")
-casesCrop = im.crop((435, 200, 590, 252))
-casesCrop.save("casesCrop.png")
-deathsCrop = im.crop((970, 200, 1150, 252))
-deathsCrop.save("deathsCrop.png")
-testsCrop = im.crop((682, 430, 872, 482))
-testsCrop.save("testsCrop.png")
+    today = date.today().strftime("%d/%m/%y")
+    today = str(today).replace("/", "-")
 
-reader = easyocr.Reader(["en"])
-casesResult = strToInt(reader.readtext("casesCrop.png", detail = 0)[0])
-deathsResult = strToInt(reader.readtext("deathsCrop.png", detail = 0)[0])
-testsResult = strToInt(reader.readtext("testsCrop.png", detail = 0)[0])
+    newEntry = {"dailyInfected": casesResult,
+        "dailyTested": testsResult,
+        "dailyDeceased": deathsResult,
+        "lastUpdatedAtSource": today}
 
-today = date.today().strftime("%d/%m/%y")
-today = str(today).replace("/", "-")
+    appendJSON(newEntry)
 
-newEntry = {"dailyInfected": casesResult,
-    "dailyTested": testsResult,
-    "dailyDeceased": deathsResult,
-    "lastUpdatedAtSource": today}
+    with open("/home/kitkovsky/Desktop/maily-dail/data.json") as file:
+        data = json.load(file)
 
-appendJSON(newEntry)
+    finalMessage = str(json.dumps(data["table"][-1], indent=2))
+    finalMessage = finalMessage + "\n\n~~~~~~~~~~~~\n\n"
+    for entry in reversed(data["table"]):
+        finalMessage = finalMessage + f"{entry['lastUpdatedAtSource']} - "
+        finalMessage = finalMessage + f"{entry['dailyInfected']} cases, {entry['dailyDeceased']} deaths, {entry['dailyTested']} tests\n"
 
-# TODO: change the input file reading part to the new json format, yaml?
+    plt.style.use("fivethirtyeight")
+    plt.rcParams.update({"font.size": 3.5})
+    plt.rcParams.update({"figure.figsize": [10, 5]})
+    dates = []
+    cases = []
+    for entry in data["table"]:
+        dates.append(entry["lastUpdatedAtSource"])
+        cases.append(entry["dailyInfected"])
 
-with open("./data.json") as file:
-    data = json.load(file)
+    dates = dates[-30:]
+    cases = cases[-30:]
 
-finalMessage = str(json.dumps(data["table"][-1], indent=2))
-finalMessage = finalMessage + "\n\n~~~~~~~~~~~~\n\n"
-for entry in reversed(data["table"]):
-    finalMessage = finalMessage + f"{entry['lastUpdatedAtSource']} - "
-    finalMessage = finalMessage + f"{entry['dailyInfected']} cases, {entry['dailyDeceased']} deaths, {entry['dailyTested']} tests\n"
+    yPos = np.arange(len(dates))
+    plt.xticks(yPos, dates)
+    plt.bar(yPos, cases)
+    for i in range(len(dates)):
+        plt.text(i, cases[i] // 2, cases[i], ha="center")
+    plt.savefig("graph.png", dpi=500)
 
-plt.style.use("fivethirtyeight")
-plt.rcParams.update({"font.size": 9})
-dates = []
-cases = []
-for entry in data["table"]:
-    dates.append(entry["lastUpdatedAtSource"])
-    cases.append(entry["dailyInfected"])
+    with open("/home/kitkovsky/Desktop/maily-dail/graph.png", "rb") as file:
+        fileData = file.read()
+        fileType = imghdr.what(file.name)
 
-dates = dates[-30:]
-cases = cases[-30:]
+    EMAIL_ADDRESS="uselesstrash19@gmail.com"
+    EMAIL_PASSWORD="zbtg hrvk djev usah"
+    MY_EMAIL_ADDRESS="okitkowski114@gmail.com"
 
-yPos = np.arange(len(dates))
-plt.xticks(yPos, dates)
-plt.bar(yPos, cases)
-for i in range(len(dates)):
-    plt.text(i, cases[i] // 2, cases[i], ha="center")
-plt.savefig("graph.png", dpi=200)
+    msg = EmailMessage()
+    msg["From"] = EMAIL_ADDRESS
+    msg["To"] = MY_EMAIL_ADDRESS
+    msg["Subject"] = "Covid Update You Lazy Bitch"
+    msg.set_content(finalMessage)
+    msg.add_attachment(fileData,
+                       maintype="image",
+                       subtype=fileType,
+                       filename="graph")
 
-with open("./graph.png", "rb") as file:
-    fileData = file.read()
-    fileType = imghdr.what(file.name)
+    with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
+        smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
+        smtp.send_message(msg)
 
-msg = EmailMessage()
-msg["From"] = EMAIL_ADDRESS
-msg["To"] = MY_EMAIL_ADDRESS
-msg["Subject"] = "Covid Update You Lazy Bitch"
-msg.set_content(finalMessage)
-msg.add_attachment(fileData,
-                   maintype="image",
-                   subtype=fileType,
-                   filename="graph")
+    plt.cla()
+    plt.clf()
 
-with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
-    smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
-    smtp.send_message(msg)
+while True:
+    now = datetime.now()
+    currentTime = now.strftime("%H:%M:%S")
+    print(currentTime)
+    if currentTime[0] == "1" and currentTime[1] == "3":
+        mainBoi()
+    time.sleep(3600)
 

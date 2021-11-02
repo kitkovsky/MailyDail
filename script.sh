@@ -1,3 +1,3 @@
 #!/bin/zsh
-node main.js
+#node main.js
 python main.py
