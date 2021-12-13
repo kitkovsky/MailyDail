@@ -129,7 +129,7 @@ while True:
     now = datetime.now()
     currentTime = now.strftime("%H:%M:%S")
     print(currentTime)
-    if currentTime[0] == "1" and currentTime[1] == "3":
-        mainBoi()
+    #if currentTime[0] == "1" and currentTime[1] == "3":
+    mainBoi()
     time.sleep(3600)
 
