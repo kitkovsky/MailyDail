@@ -5,14 +5,12 @@ import numpy as np
 import imghdr
 import time
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 from email.message import EmailMessage
 from credentials import EMAIL_ADDRESS, EMAIL_PASSWORD, MY_EMAIL_ADDRESS
 import easyocr
 from PIL import Image
 from datetime import date
 import json
-from datetime import datetime
 
 
 def makeProperDate(date):
