@@ -605,6 +605,36 @@
             "dailyTested": 104369,
             "dailyDeceased": 486,
             "lastUpdatedAtSource": "11-12-21"
+        },
+        {
+            "dailyInfected": 19452,
+            "dailyTested": 74700,
+            "dailyDeceased": 65,
+            "lastUpdatedAtSource": "12-12-21"
+        },
+        {
+            "dailyInfected": 11379,
+            "dailyTested": 50200,
+            "dailyDeceased": 29,
+            "lastUpdatedAtSource": "13-12-21"
+        },
+        {
+            "dailyInfected": 17460,
+            "dailyTested": 93800,
+            "dailyDeceased": 537,
+            "lastUpdatedAtSource": "14-12-21"
+        },
+        {
+            "dailyInfected": 24266,
+            "dailyTested": 109500,
+            "dailyDeceased": 669,
+            "lastUpdatedAtSource": "15-12-21"
+        },
+        {
+            "dailyInfected": 22097,
+            "dailyTested": 103928,
+            "dailyDeceased": 592,
+            "lastUpdatedAtSource": "16-12-21"
         }
     ]
 }
