@@ -143,6 +143,468 @@
             "dailyTested": 39962,
             "dailyDeceased": 14,
             "lastUpdatedAtSource": "24-09-21"
+        },
+        {
+            "dailyInfected": 917,
+            "dailyTested": 42300,
+            "dailyDeceased": 20,
+            "lastUpdatedAtSource": "25-09-21"
+        },
+        {
+            "dailyInfected": 643,
+            "dailyTested": 17700,
+            "dailyDeceased": 1,
+            "lastUpdatedAtSource": "26-09-21"
+        },
+        {
+            "dailyInfected": 421,
+            "dailyTested": -1,
+            "dailyDeceased": 0,
+            "lastUpdatedAtSource": "27-09-21"
+        },
+        {
+            "dailyInfected": 975,
+            "dailyTested": 46681,
+            "dailyDeceased": 29,
+            "lastUpdatedAtSource": "28-09-21"
+        },
+        {
+            "dailyInfected": 1234,
+            "dailyTested": 45858,
+            "dailyDeceased": 22,
+            "lastUpdatedAtSource": "29-09-21"
+        },
+        {
+            "dailyInfected": 1208,
+            "dailyTested": 39449,
+            "dailyDeceased": 27,
+            "lastUpdatedAtSource": "30-09-21"
+        },
+        {
+            "dailyInfected": 1362,
+            "dailyTested": 42843,
+            "dailyDeceased": 16,
+            "lastUpdatedAtSource": "01-10-21"
+        },
+        {
+            "dailyInfected": 1344,
+            "dailyTested": 42843,
+            "dailyDeceased": 16,
+            "lastUpdatedAtSource": "02-10-21"
+        },
+        {
+            "dailyInfected": 1090,
+            "dailyTested": 30175,
+            "dailyDeceased": 6,
+            "lastUpdatedAtSource": "03-10-21"
+        },
+        {
+            "dailyInfected": 684,
+            "dailyTested": 21600,
+            "dailyDeceased": 0,
+            "lastUpdatedAtSource": "04-10-21"
+        },
+        {
+            "dailyInfected": 1325,
+            "dailyTested": 44692,
+            "dailyDeceased": 46,
+            "lastUpdatedAtSource": "05-10-21"
+        },
+        {
+            "dailyInfected": 2085,
+            "dailyTested": 43668,
+            "dailyDeceased": 33,
+            "lastUpdatedAtSource": "06-10-21"
+        },
+        {
+            "dailyInfected": 2007,
+            "dailyTested": 41707,
+            "dailyDeceased": 29,
+            "lastUpdatedAtSource": "07-10-21"
+        },
+        {
+            "dailyInfected": 1895,
+            "dailyTested": 38494,
+            "dailyDeceased": 31,
+            "lastUpdatedAtSource": "08-10-21"
+        },
+        {
+            "dailyInfected": 2012,
+            "dailyTested": 39397,
+            "dailyDeceased": 29,
+            "lastUpdatedAtSource": "09-10-21"
+        },
+        {
+            "dailyInfected": 1527,
+            "dailyTested": 25846,
+            "dailyDeceased": 5,
+            "lastUpdatedAtSource": "10-10-21"
+        },
+        {
+            "dailyInfected": 903,
+            "dailyTested": 0,
+            "dailyDeceased": 21213,
+            "lastUpdatedAtSource": "11-10-21"
+        },
+        {
+            "dailyInfected": 2118,
+            "dailyTested": 42848,
+            "dailyDeceased": 49,
+            "lastUpdatedAtSource": "12-10-21"
+        },
+        {
+            "dailyInfected": 2640,
+            "dailyTested": 44897,
+            "dailyDeceased": 40,
+            "lastUpdatedAtSource": "13-10-21"
+        },
+        {
+            "dailyInfected": 3000,
+            "dailyTested": 44889,
+            "dailyDeceased": 60,
+            "lastUpdatedAtSource": "14-10-21"
+        },
+        {
+            "dailyInfected": 2771,
+            "dailyTested": 39863,
+            "dailyDeceased": 49,
+            "lastUpdatedAtSource": "15-10-21"
+        },
+        {
+            "dailyInfected": 3236,
+            "dailyTested": 43645,
+            "dailyDeceased": 44,
+            "lastUpdatedAtSource": "16-10-21"
+        },
+        {
+            "dailyInfected": 2523,
+            "dailyTested": 28697,
+            "dailyDeceased": 0,
+            "lastUpdatedAtSource": "17-10-21"
+        },
+        {
+            "dailyInfected": 1537,
+            "dailyTested": 22364,
+            "dailyDeceased": 3,
+            "lastUpdatedAtSource": "19-10-21"
+        },
+        {
+            "dailyInfected": 5559,
+            "dailyTested": -1,
+            "dailyDeceased": -1,
+            "lastUpdatedAtSource": "20-10-21"
+        },
+        {
+            "dailyInfected": 5592,
+            "dailyTested": 49649,
+            "dailyDeceased": 46,
+            "lastUpdatedAtSource": "21-10-21"
+        },
+        {
+            "dailyInfected": 5706,
+            "dailyTested": 49537,
+            "dailyDeceased": 59,
+            "lastUpdatedAtSource": "22-10-21"
+        },
+        {
+            "dailyInfected": 6274,
+            "dailyTested": 51957,
+            "dailyDeceased": 75,
+            "lastUpdatedAtSource": "23-10-21"
+        },
+        {
+            "dailyInfected": 4728,
+            "dailyTested": 33781,
+            "dailyDeceased": 13,
+            "lastUpdatedAtSource": "24-10-21"
+        },
+        {
+            "dailyInfected": 2950,
+            "dailyTested": 25515,
+            "dailyDeceased": 0,
+            "lastUpdatedAtSource": "25-10-21"
+        },
+        {
+            "dailyInfected": 6265,
+            "dailyTested": 56611,
+            "dailyDeceased": 93,
+            "lastUpdatedAtSource": "26-10-21"
+        },
+        {
+            "dailyInfected": 8361,
+            "dailyTested": 58862,
+            "dailyDeceased": 133,
+            "lastUpdatedAtSource": "27-10-21"
+        },
+        {
+            "dailyInfected": 8378,
+            "dailyTested": 58849,
+            "dailyDeceased": 101,
+            "lastUpdatedAtSource": "28-10-21"
+        },
+        {
+            "dailyInfected": 9387,
+            "dailyTested": 59181,
+            "dailyDeceased": 102,
+            "lastUpdatedAtSource": "29-10-21"
+        },
+        {
+            "dailyInfected": 9798,
+            "dailyTested": 59956,
+            "dailyDeceased": 115,
+            "lastUpdatedAtSource": "30-10-21"
+        },
+        {
+            "dailyInfected": 7145,
+            "dailyTested": 37777,
+            "dailyDeceased": 9,
+            "lastUpdatedAtSource": "31-10-21"
+        },
+        {
+            "dailyInfected": 4894,
+            "dailyTested": 29091,
+            "dailyDeceased": 13,
+            "lastUpdatedAtSource": "01-11-21"
+        },
+        {
+            "dailyInfected": 4514,
+            "dailyTested": 27951,
+            "dailyDeceased": 9,
+            "lastUpdatedAtSource": "02-11-21"
+        },
+        {
+            "dailyInfected": 10429,
+            "dailyTested": 68383,
+            "dailyDeceased": 124,
+            "lastUpdatedAtSource": "03-11-21"
+        },
+        {
+            "dailyInfected": 15515,
+            "dailyTested": 78757,
+            "dailyDeceased": 250,
+            "lastUpdatedAtSource": "04-11-21"
+        },
+        {
+            "dailyInfected": 15904,
+            "dailyTested": 78683,
+            "dailyDeceased": 152,
+            "lastUpdatedAtSource": "05-11-21"
+        },
+        {
+            "dailyInfected": 15190,
+            "dailyTested": 77986,
+            "dailyDeceased": 186,
+            "lastUpdatedAtSource": "06-11-21"
+        },
+        {
+            "dailyInfected": 12493,
+            "dailyTested": 54721,
+            "dailyDeceased": 24,
+            "lastUpdatedAtSource": "07-11-21"
+        },
+        {
+            "dailyInfected": 7316,
+            "dailyTested": 37270,
+            "dailyDeceased": 3,
+            "lastUpdatedAtSource": "08-11-21"
+        },
+        {
+            "dailyInfected": 13644,
+            "dailyTested": 76080,
+            "dailyDeceased": 220,
+            "lastUpdatedAtSource": "09-11-21"
+        },
+        {
+            "dailyInfected": 18550,
+            "dailyTested": 84377,
+            "dailyDeceased": 269,
+            "lastUpdatedAtSource": "10-11-21"
+        },
+        {
+            "dailyInfected": 19074,
+            "dailyTested": 85369,
+            "dailyDeceased": 274,
+            "lastUpdatedAtSource": "11-11-21"
+        },
+        {
+            "dailyInfected": 12965,
+            "dailyTested": 49375,
+            "dailyDeceased": 31,
+            "lastUpdatedAtSource": "12-11-21"
+        },
+        {
+            "dailyInfected": 14292,
+            "dailyTested": 68903,
+            "dailyDeceased": 266,
+            "lastUpdatedAtSource": "13-11-21"
+        },
+        {
+            "dailyInfected": 14442,
+            "dailyTested": 54865,
+            "dailyDeceased": 46,
+            "lastUpdatedAtSource": "14-11-21"
+        },
+        {
+            "dailyInfected": 9512,
+            "dailyTested": 40933,
+            "dailyDeceased": 12,
+            "lastUpdatedAtSource": "15-11-21"
+        },
+        {
+            "dailyInfected": 16590,
+            "dailyTested": 82760,
+            "dailyDeceased": 282,
+            "lastUpdatedAtSource": "16-11-21"
+        },
+        {
+            "dailyInfected": 24239,
+            "dailyTested": 96830,
+            "dailyDeceased": 463,
+            "lastUpdatedAtSource": "17-11-21"
+        },
+        {
+            "dailyInfected": 24882,
+            "dailyTested": 99507,
+            "dailyDeceased": 370,
+            "lastUpdatedAtSource": "18-11-21"
+        },
+        {
+            "dailyInfected": 23242,
+            "dailyTested": 95500,
+            "dailyDeceased": 421,
+            "lastUpdatedAtSource": "19-11-21"
+        },
+        {
+            "dailyInfected": 23414,
+            "dailyTested": 95486,
+            "dailyDeceased": 382,
+            "lastUpdatedAtSource": "20-11-21"
+        },
+        {
+            "dailyInfected": 18883,
+            "dailyTested": 67381,
+            "dailyDeceased": 41,
+            "lastUpdatedAtSource": "21-11-21"
+        },
+        {
+            "dailyInfected": 12334,
+            "dailyTested": 48557,
+            "dailyDeceased": 8,
+            "lastUpdatedAtSource": "22-11-21"
+        },
+        {
+            "dailyInfected": 19936,
+            "dailyTested": 91012,
+            "dailyDeceased": 398,
+            "lastUpdatedAtSource": "23-11-21"
+        },
+        {
+            "dailyInfected": 28380,
+            "dailyTested": 107192,
+            "dailyDeceased": 460,
+            "lastUpdatedAtSource": "24-11-21"
+        },
+        {
+            "dailyInfected": 28128,
+            "dailyTested": 110915,
+            "dailyDeceased": 497,
+            "lastUpdatedAtSource": "25-11-21"
+        },
+        {
+            "dailyInfected": 26735,
+            "dailyTested": 105682,
+            "dailyDeceased": 421,
+            "lastUpdatedAtSource": "26-11-21"
+        },
+        {
+            "dailyInfected": 26182,
+            "dailyTested": 105167,
+            "dailyDeceased": 378,
+            "lastUpdatedAtSource": "27-11-21"
+        },
+        {
+            "dailyInfected": 20576,
+            "dailyTested": 71569,
+            "dailyDeceased": 51,
+            "lastUpdatedAtSource": "28-11-21"
+        },
+        {
+            "dailyInfected": 13115,
+            "dailyTested": 51167,
+            "dailyDeceased": 18,
+            "lastUpdatedAtSource": "29-11-21"
+        },
+        {
+            "dailyInfected": 19074,
+            "dailyTested": 92700,
+            "dailyDeceased": -1,
+            "lastUpdatedAtSource": "30-11-21"
+        },
+        {
+            "dailyInfected": 29064,
+            "dailyTested": 114112,
+            "dailyDeceased": 570,
+            "lastUpdatedAtSource": "01-12-21"
+        },
+        {
+            "dailyInfected": 27356,
+            "dailyTested": 109011,
+            "dailyDeceased": 502,
+            "lastUpdatedAtSource": "02-12-21"
+        },
+        {
+            "dailyInfected": 26965,
+            "dailyTested": 107963,
+            "dailyDeceased": 470,
+            "lastUpdatedAtSource": "03-12-21"
+        },
+        {
+            "dailyInfected": 25576,
+            "dailyTested": 105963,
+            "dailyDeceased": 502,
+            "lastUpdatedAtSource": "04-12-21"
+        },
+        {
+            "dailyInfected": 22389,
+            "dailyTested": 78533,
+            "dailyDeceased": 45,
+            "lastUpdatedAtSource": "05-12-21"
+        },
+        {
+            "dailyInfected": 13250,
+            "dailyTested": 52286,
+            "dailyDeceased": 25,
+            "lastUpdatedAtSource": "06-12-21"
+        },
+        {
+            "dailyInfected": 19366,
+            "dailyTested": 95015,
+            "dailyDeceased": 504,
+            "lastUpdatedAtSource": "07-12-21"
+        },
+        {
+            "dailyInfected": 19366,
+            "dailyTested": 115100,
+            "dailyDeceased": -1,
+            "lastUpdatedAtSource": "08-12-21"
+        },
+        {
+            "dailyInfected": 27458,
+            "dailyTested": 111604,
+            "dailyDeceased": 562,
+            "lastUpdatedAtSource": "09-12-21"
+        },
+        {
+            "dailyInfected": 24991,
+            "dailyTested": 107666,
+            "dailyDeceased": 571,
+            "lastUpdatedAtSource": "10-12-21"
+        },
+        {
+            "dailyInfected": 23764,
+            "dailyTested": 104369,
+            "dailyDeceased": 486,
+            "lastUpdatedAtSource": "11-12-21"
         }
     ]
 }
